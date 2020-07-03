@@ -26,7 +26,7 @@ function refresh(){
 		document.getElementById("mensaje").innerHTML = "¡Bien!"
 		buenas = buenas + 1
 	}else{
-		document.getElementById("mensaje").innerHTML = num1 + " x " + num2 + " = " + trueanswer
+		document.getElementById("mensaje").innerHTML ="No, la respuesta es " + num1 + " x " + num2 + " = " + trueanswer + ", ¡Sigue Intentando!"
 		malas = malas + 1
 	}
 

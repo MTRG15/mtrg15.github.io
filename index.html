@@ -13,13 +13,13 @@
       	font-style: bold;
 	  }
       div{
-        width: 90vw;
+        width: 100vw;
         height: 90vh;
         text-align: center;
       }
       table{
       	display: inline-block;
-      	margin-top: 15%;
+      	margin-top: 1%;
       	text-align: center;
       	float: center;
       }
@@ -31,17 +31,19 @@
 	<div id="main">
 		<h2>Multiplicaciones de María</h2>
 		<table>
+			<br><br><br>
+			<p id="mensaje"> </p>
+
 			<tr>
 				<td></td><td><span id="mult1"></span><span id="operator">x</span><span id="mult2"></span></td><td></td>
 			</tr>
 			<tr>
 				<td><p>Resultado: </p></td><td><input type="number" id="respuesta" class="form-control mr-sm-2" onkeypress=""></td><td><button id="boton" class="btn btn-success my-2 my-sm-0" type="submit" onclick="refresh()">Responder</button></td>
 			</tr>
-			<tr>
-				<td></td><td><p id="mensaje"></p></td>
-			</tr>
-			<p id="mensaje2"></p>
+			
+			
 		</table>
+		<p id="mensaje2"> </p>
 	</div>
 	<script type="text/javascript" src="multiplications.js">
 	
