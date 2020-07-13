@@ -8,45 +8,78 @@
     <style type="text/css">
       body{
       	background-color: skyblue;
-      	font-size: 2em;
       	font-family: sans-serif;
       	font-style: bold;
+      	-webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%;
 	  }
       div{
-        width: 100vw;
-        height: 90vh;
+        
         text-align: center;
       }
       table{
       	display: inline-block;
-      	margin-top: 1%;
+      	margin-top: 10px;
       	text-align: center;
-      	float: center;
+      }
+      .bigText{
+      	font-size: 2em;
       }
     </style>
 
 	<title>Las Multiplicaciones de Maria</title>
 </head>
 <body>
-	<div id="main">
-		<h2>Multiplicaciones de María</h2>
-		<table>
-			<br><br><br>
-			<p id="mensaje"> </p>
+	<div id="main" class="container">
+		<div class="container">
+        	<h1>Las Multiplicaciones de María</h1>
+      	</div>
 
+      	<div class="container">
+      		<h3 id="mensaje1">Responde 20 multiplicaciones correctas</h3>
+      	</div>
+
+		<div class="container bigText">
+				<span id="mult1"></span><span id="operator">x</span><span id="mult2"></span>
+		</div>
+		<table>
 			<tr>
-				<td></td><td><span id="mult1"></span><span id="operator">x</span><span id="mult2"></span></td><td></td>
+				<td></td>
+				<td><input id="respuesta" type="number" placeholder="Respuesta"  class="form-control mr-sm-2"></td>
+				<td><button id="boton" type="submit" class="btn btn-primary btn-lg"  onclick="refresh()">Responder</button></td>
 			</tr>
-			<tr>
-				<td></td><td><input type="number" placeholder="Respuesta" id="respuesta" class="form-control mr-sm-2" onkeypress=""></td><td><button id="boton" class="btn btn-success my-2 my-sm-0" type="submit" onclick="refresh()">Responder</button></td>
-			</tr>
-			
-			
 		</table>
-		<p id="mensaje2"> </p>
+		<div class="container">
+			<p id="mensaje2"></p>
+		</div>
+		<div class="table-responsive container">
+			
+			<table class="table table-hover">
+				<p class="bigText">Configuraciones</p>
+			<tr><td><span>Tabla del 1: </span><input type="checkbox" id="tabla1"></td>
+				<td><span>Tabla del 2: </span><input type="checkbox" id="tabla2"></td>
+				<td><span>Tabla del 3: </span><input type="checkbox" id="tabla3"></td>
+			<tr><td><span>Tabla del 4: </span><input type="checkbox" id="tabla4"></td>
+				<td><span>Tabla del 5: </span><input type="checkbox" id="tabla5"></td>
+				<td><span>Tabla del 6: </span><input type="checkbox" id="tabla6"></td></tr>
+			<tr><td><span>Tabla del 7: </span><input type="checkbox" id="tabla7"></td>
+				<td><span>Tabla del 8: </span><input type="checkbox" id="tabla8"></td>
+				<td><span>Tabla del 9: </span><input type="checkbox" id="tabla9"></td></tr>
+			<tr><td><span>Tabla del 10: </span><input type="checkbox" id="tabla10"></td>
+				<td><span>Tabla del 11: </span><input type="checkbox" id="tabla11"></td>
+				<td><span>Tabla del 12: </span><input type="checkbox" id="tabla12"></td></tr>
+			</table>
+		</div>
+		<div class="container">
+			<button id="aceptarConf" type="submit" class="btn btn-primary btn-lg" onclick="checkConfig()">Aceptar</button></button>
+			<button id="aceptarConf" type="submit" class="btn btn-primary btn-lg" onclick="clearCheckBoxes()">Limpiar</button></button>
+		</div>
+		
 	</div>
-	<script type="text/javascript" src="multiplications.js">
 	
+	<script type="text/javascript" src="multiplications.js">
 	</script>
 </body>
 </html>
