@@ -80,6 +80,7 @@ function clearCheckBoxes(){
 	boxes.forEach( function (value, index){
 		boxes[index].checked = false
 	})
+	mensaje2.innerHTML = "Configuración por defecto (todas las tablas)"
 }
 
 function checkConfig(){ //checks the checkboxes to update the operation pool
