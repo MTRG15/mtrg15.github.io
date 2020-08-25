@@ -2,108 +2,27 @@
 <html lang="es" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <style type="text/css">
-      @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
-
-      body{
-      	background-color: skyblue;
-      	font-family: "Walter Turncoat" !important;
-      	color: #E8E8E8;
-      	
-      	background-size: 100vh 100vw;
-      	-webkit-background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -o-background-size: 100% 100%;
-        
-	  }
-	  ::-webkit-input-placeholder { /* Edge */
-		color: lightgrey !important;
-	  }
-	  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-		color: lightgrey !important;
-	  }
-	  ::placeholder {
-		color: lightgrey !important;
-	  }
-	  .fondo{
-	  	background-image: url("images/fondoclasesWEB.jpg");
-	  	width: 100%;
-	  	height: 120vh;
-	  	background-position: center;
-	 	background-repeat: no-repeat;
-	  	background-size: cover;
-	  	position: relative;
-	  }
-	  .pizarra{
-	  	text-align: center;
-	  	position: absolute;
-	  	top: 50%;
-	  	left: 40%;
-	  	transform: translate(-25%, -100%);
-	  	z-index: 2;
-	  }
-	  .mensaje{
-	  	top: 5px
-	  	
-	  }
-	  .resultado{
-	  	width: 30%;
-	  	top: 5px;
-	  }
-	  .chalk-border {
-	  	border: solid rgba(255,255,255,.8);
-	  	
-	  	border-image: url("images/chalk-border.png") 20;
-	  }
-
-	  .chalk-border:before {
-	  	content: '';
-
-	  }
-	  #respuesta{
-	  	color: white;
-	  	text-decoration: none;
-	  	border-style: dotted;
-	  	border-width: 5px;
-	  	border-color: rgba(255,255,255, 0.5);
-	  	border-radius: 25px;
-	  }
-	  .maria{
-	  	position: absolute;
-	  	height: 120vh;
-	  	width: auto;
-	  	top: 10%;
-	  	left: 33%;
-	  	transform: translate(-33%, -5%);
-	  	z-index: 1;
-	  }
-      div{
-        text-align: center;
-      }
-      table{
-      	display: inline-block;
-      	margin-top: 10px;
-      	text-align: center;
-      }
-      .bigText{
-      	font-size: 2em;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Las Multiplicaciones de María" content="Aprenderse las tablas de multiplicar no tiene que ser difícil, sólo practica un par de veces al día">
 
 	<title>Las Multiplicaciones de Maria</title>
+
+	<!-- Boostrap local libraries -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Fonts and Icons -->
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<!-- Custom Styles for this page-->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<!-- PIZARRA -->
 	<div id="main" class="fondo">
       	<div class="pizarra">
-
 	      	<div class="container">
 	      		<h3 id="mensaje1">Responde 20 multiplicaciones correctamente</h3>
 	      	</div>
-
+	      	<!-- Multiplicacion -->
 			<div class="container bigText">
 					<span id="mult1"></span><span id="operator">x</span><span id="mult2"></span>
 			</div>
@@ -145,6 +64,55 @@
 		</div>
 	</div>
 
+	<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            	<span class="copyright">Copyright &copy; The Sheep Raider Studios</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+	                <span class="">Ilustraciones:</span>
+              </li>
+              <li class="list-inline-item">
+	                <a href="https://www.instagram.com/jezkaq/">
+	                  <i class="fab fa-instagram" target="_blank"></i>
+	                </a>
+              </li>
+              <!--
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/profile.php?id=100018691128276" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+          	  -->
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/masterpaintservices/?hl=es-la" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <!--
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Politics</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          -->
+        </div>
+      </div>
+    </footer>
 	<script type="text/javascript" src="multiplications.js">
 	</script>
 </body>
