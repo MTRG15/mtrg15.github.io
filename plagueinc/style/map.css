@@ -1,0 +1,175 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    color: #fff;
+}
+h1 {
+    font-size: 60px;
+    color: #b72d2d;
+}
+.input-start {
+    width: 100%;
+    display: grid;
+    max-width: 450px;
+    margin: auto;
+    height: 210px;
+    margin-top: 130px;
+}
+.input-start input {
+    height: 45px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: #f1f1f1;
+}
+.input-start #start {
+    height: 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+    border: 2px solid #b72d2d;
+    padding: 30px 60px;
+    color: #b72d2d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    transition: all .5s;
+    background-color: transparent;
+    line-height: 0px;
+}
+.input-start #start:before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top:  -100%;
+    left: -100%;
+    background: #b72d2d;
+    transition: all .5s;
+    z-index: -1;
+            
+}
+.input-start #start:hover{
+    color: white;
+}
+.input-start #start:hover:before{          
+    top: 0;
+    left: 0;
+
+}
+#tableData {
+    color: #000;
+}
+#infectedCountries {
+    display: none;
+}
+#globalItems {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+}
+#infectedCountries {
+    text-align: left;
+    height: 285px;
+    overflow: scroll;
+}
+.float-child-b table {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.st0.active{            
+	fill: #f30909 !important;
+    stroke: #333;
+    stroke-width: 1;
+}  
+
+.item-tab{
+    display: none;
+}
+  .active{
+    display: block;
+  }
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child-a {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}  
+
+.float-child-b {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    max-width: 350px;
+}
+
+.float-child-time {
+    width: 10%;
+    float: left;
+    padding: 5px;
+}  
+
+.float-child-new {
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+.float-child-disease {
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+ 
+.content-popup {
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:500px;
+    min-height:100px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+ 
+.content-popup h2 {
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+ 
+.popup-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+ 
+.close {
+    position: absolute;
+    right: 15px;
+}
