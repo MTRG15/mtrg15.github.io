@@ -44,7 +44,7 @@ class Country {
   checkActivateCure(){
     if(this.cureRate == 0 && this.state == countryStates[0]){
       if(this.alertLevel == alertLevels[2] || this.alertLevel == alertLevels[1]){
-        this.cureRate = 1/generateRandomIntegerInRange(58,300);
+        this.cureRate = 1/generateRandomIntegerInRange(55,300);
       }
     }
   }
