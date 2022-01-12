@@ -1,0 +1,38 @@
+/* Custom fonts
+.ttf or .otf file type
+a css sheet is included with the file containing something like
+
+@font-face {
+font-family: "CustomFont";
+src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+}
+
+afterwards, you can use the fonts in other css files as
+h1 {
+font-family: 'CustomFont', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+*/
+
+html{
+    font-family: sans-serif, monospace;
+}
+
+audio{
+    width: 100%;
+}
+
+.card{
+    text-align: center;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+button{
+    width: 40%;
+}
+
