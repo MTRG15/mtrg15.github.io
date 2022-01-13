@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <!--  CUSTOM CSS LIBRARIES  -->
-    <link rel="stylesheet" href="css/custom-css/custom-style.css">
+    <link rel="stylesheet" href="css/custom_css/custom_style.css">
 
     <!--  BOOTSTRAP JAVASCRIPT LIBRARIES  -->
     <script src="js/bootstrap.js"></script>
 
     <!--  CUSTOM CSS LIBRARIES  -->
     <script src="js/custom-js/button-behavior.js"></script>
-
-
 
 </head>
 <body data-spy="scroll" data-target="#menu" data-offset="300">
@@ -35,12 +33,12 @@
         <div class="card col-sm-4 ">
 
             <div class="card-header">
-                <h2 id="mcard01">Select an option</h2>
+                <h2>Select an option</h2>
             </div>
 
             <div class="card-body">
                 <audio controls>
-                    <source src="audio-files/did-matt.mp3" type="audio/mpeg">
+                    <source src="audio-files/did_matt.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
@@ -53,7 +51,7 @@
         </div>
 
         <!---------------------------------- CARD 02 ---------------------------------->
-        <div class="card col-sm-4">
+        <div class="card col-sm-4 ">
 
             <div class="card-header">
                 <h2>Select an option</h2>
@@ -61,23 +59,20 @@
 
             <div class="card-body">
                 <audio controls>
-                    <!--
-                    <source src="audio-files/.ogg" type="audio/ogg">
-                     -->
-                    <source src="audio-files/did-matt.mp3" type="audio/mpeg">
+                    <source src="audio-files/did_matt.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
 
             <div class="card-footer">
-                <button type="button" class="btn-primary" id="correct">Same</button>
-                <button type="button" class="btn-primary" id="incorrect">Different</button>
+                <button type="button" class="btn-primary" onclick="correct(this)">Same</button>
+                <button type="button" class="btn-primary" onclick="incorrect(this)">Different</button>
             </div>
 
         </div>
 
         <!---------------------------------- CARD 03 ---------------------------------->
-        <div class="card col-sm-4">
+        <div class="card col-sm-4 ">
 
             <div class="card-header">
                 <h2>Select an option</h2>
@@ -85,21 +80,21 @@
 
             <div class="card-body">
                 <audio controls>
-                    <source src="audio-files/did-matt.mp3" type="audio/mpeg">
+                    <source src="audio-files/did_matt.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
 
             <div class="card-footer">
-                <button type="button" class="btn-primary" id="correct">Same</button>
-                <button type="button" class="btn-primary" id="incorrect">Different</button>
+                <button type="button" class="btn-primary" onclick="correct(this)">Same</button>
+                <button type="button" class="btn-primary" onclick="incorrect(this)">Different</button>
             </div>
 
         </div>
 
+        </div>
+
     </div>
-
-
 
 </body>
 </html>
