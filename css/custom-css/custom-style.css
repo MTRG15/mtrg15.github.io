@@ -1,0 +1,72 @@
+/*
+@font-face {
+    font-family: 'pt_root_ui';
+    src: url('text-font/PT Root UI_Bold-webfont.eot');
+    src: url('text-font/PT Root UI_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('PT Root UI_Bold-webfont.woff2') format('woff2'),
+    url('text-font/PT Root UI_Bold-webfont.woff') format('woff'),
+    url('text-font/PT Root UI_Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_root_ui';
+    src: url('text-font/PT Root UI_Light-webfont.eot');
+    src: url('text-font/PT Root UI_Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('PT Root UI_Light-webfont.woff2') format('woff2'),
+    url('text-font/PT Root UI_Light-webfont.woff') format('woff'),
+    url('text-font/PT Root UI_Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: light;
+
+}
+
+@font-face {
+    font-family: 'pt_root_ui';
+    src: url('text-font/PT Root UI_Medium-webfont.eot');
+    src: url('text-font/PT Root UI_Medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('PT Root UI_Medium-webfont.woff2') format('woff2'),
+    url('text-font/PT Root UI_Medium-webfont.woff') format('woff'),
+    url('text-font/PT Root UI_Medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: medium;
+
+}
+*/
+@font-face {
+    font-family: 'pt_root_ui';
+    src: url('/css/custom-css/custom-fonts/text-font/PT Root UI_Regular-webfont.eot');
+    src: url('/css/custom-css/custom-fonts/text-font/PT Root UI_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/css/custom-css/custom-fonts/text-font/PT Root UI_Regular-webfont.woff') format('woff'),
+    url('/css/custom-css/custom-fonts/text-font/PT Root UI_Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    font-family: 'pt_root_ui', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+
+}
+
+audio{
+    width: 100%;
+}
+
+.card{
+    text-align: center;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+button{
+    width: 40%;
+}
+
