@@ -1,0 +1,24 @@
+html{
+    font-family: 'rounds_blackregular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+
+}
+
+audio{
+    width: 100%;
+}
+
+.card{
+    text-align: center;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+button{
+    width: 40%;
+}
+
