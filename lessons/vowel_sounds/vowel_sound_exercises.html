@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>English Vowel Sounds 01</title>
+    <!--  BOOTSTRAP CSS LIBRARIES  -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+
+    <!--  CUSTOM CSS LIBRARIES  -->
+    <link rel="stylesheet" href="../../css/custom_css/custom_style.css">
+
+    <!--  BOOTSTRAP JAVASCRIPT LIBRARIES  -->
+    <script src="../../js/bootstrap.js"></script>
+
+
+</head>
+<body data-spy="scroll" data-target="#menu" data-offset="300">
+
+    <div class="container">
+        <h1>Vowel Sounds of English</h1>
+        <p>Each audio file has two words, some of them use the same vowel sound, while others have different vowel sounds.</p>
+        <p>Can you notice if they are the same?</p>
+        <p>Listen to the audio files and select if the vowel sounds are the same or different in each audio.</p>
+    </div>
+
+    <!--                                 CONTENT                                       -->
+    <div id="content">
+
+    </div>
+
+
+    <footer>
+        <br><br><br><br><br>
+        <div class="row text-center justify-content-around">
+            <input type="button" class="btn-info small-btn" value="More exercises?" onClick="window.location.reload()">
+        </div>
+        <br><br><br><br><br>
+    </footer>
+    <!--                                TEMPLATES                                      -->
+    <template class="card-template">
+        <!---------------------------------- CARD ---------------------------------->
+        <div class="card col-sm-4 ">
+            <div class="card-header">
+                <h2 class="title"></h2>
+            </div>
+            <div class="card-body">
+                <audio class="audio" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="card-footer">
+                <button type="button" class="same-btn btn-primary">Same</button>
+                <button type="button" class="diff-btn btn-primary">Different</button>
+            </div>
+        </div>
+    </template>
+<!--
+    <template id="row-template">
+    <div class="row text-center justify-content-around">
+
+    </div>
+    </template>
+    -->
+        <!--  CUSTOM JAVASCRIPT LIBRARIES  -->
+        <script src="../../js/custom-js/button-behavior.js"></script>
+        <script defer src="exercise_generator.js"></script>
+
+</body>
+</html>
