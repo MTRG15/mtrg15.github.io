@@ -51,6 +51,16 @@
     font-style: normal;
 }
 
+body{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 p, card{
     font-family: 'pt_root_ui', Arial, sans-serif;
     font-weight: normal;
