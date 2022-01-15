@@ -3008,31 +3008,31 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #E0F19C;
+  background-color: #467010;
+  border-color: #2A4C09;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  color: #E0F19C;
+  background-color: #467010;
+  border-color: #467010;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  color: #E0F19C;
+  background-color: #467010;
+  border-color: #467010;
+  box-shadow: 0 0 0 0.25rem rgb(42, 76, 9);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  color: #E0F19C;
+  background-color: #2A4C09;
+  border-color: #2A4C09;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgb(42, 76, 9);
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
+  color: #E0F19C;
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
@@ -3068,23 +3068,23 @@ textarea.form-control-lg {
 }
 
 .btn-success {
-  color: #fff;
+  color: #E0F19C;
   background-color: #198754;
   border-color: #198754;
 }
 .btn-success:hover {
-  color: #fff;
+  color: #E0F19C;
   background-color: #157347;
   border-color: #146c43;
 }
 .btn-check:focus + .btn-success, .btn-success:focus {
-  color: #fff;
+  color: #E0F19C;
   background-color: #157347;
   border-color: #146c43;
   box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
 }
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
-  color: #fff;
+  color: #E0F19C;
   background-color: #146c43;
   border-color: #13653f;
 }
@@ -3092,7 +3092,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
 }
 .btn-success:disabled, .btn-success.disabled {
-  color: #fff;
+  color: #E0F19C;
   background-color: #198754;
   border-color: #198754;
 }

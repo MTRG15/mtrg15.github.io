@@ -18,11 +18,11 @@
 </head>
 <body data-spy="scroll" data-target="#menu" data-offset="300">
 
-    <div class="container">
-        <h1>Vowel Sounds of English</h1>
-        <p>Each audio file has two words, some of them use the same vowel sound, while others have different vowel sounds.</p>
-        <p>Can you notice if they are the same?</p>
-        <p>Listen to the audio files and select if the vowel sounds are the same or different in each audio.</p>
+    <div  class="container">
+        <h1 class="text">Vowel Sounds of English</h1>
+        <p class="text">Each audio file has two words, some of them use the same vowel sound, while others have different vowel sounds.
+        <br>Can you notice if they are the same?
+        <br>Listen to the audio files and select if the vowel sounds are the same or different in each audio.</p>
     </div>
 
     <!--                                 CONTENT                                       -->
@@ -30,10 +30,9 @@
 
     </div>
 
-
     <footer>
         <br><br><br><br><br>
-        <div class="row text-center justify-content-around">
+        <div class="row text-center justify-content-around text">
             <input type="button" class="btn-info small-btn" value="More exercises?" onClick="window.location.reload()">
         </div>
         <br><br><br><br><br>
@@ -41,7 +40,7 @@
     <!--                                TEMPLATES                                      -->
     <template class="card-template">
         <!---------------------------------- CARD ---------------------------------->
-        <div class="card col-lg-6 ">
+        <div class="card col-lg-6 text">
             <div class="card-header">
                 <h2 class="title"></h2>
             </div>
@@ -57,13 +56,7 @@
             </div>
         </div>
     </template>
-<!--
-    <template id="row-template">
-    <div class="row text-center justify-content-around">
 
-    </div>
-    </template>
-    -->
         <!--  CUSTOM JAVASCRIPT LIBRARIES  -->
         <script src="../../js/custom-js/button-behavior.js"></script>
         <script defer src="exercise_generator.js"></script>

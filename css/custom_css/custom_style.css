@@ -54,11 +54,13 @@
 body{
     width: 100%;
     position: absolute;
-    top: 150px;
-    left: 0px;
+    top: 50px;
     padding: 15px;
     border-radius: 10px;
     box-sizing: border-box;
+
+    /*   Colors   */
+    background-color: #467010;
 }
 
 p, card{
@@ -68,9 +70,23 @@ p, card{
 }
 
 h1, h2, h3 {
-    font-family: 'rounds_black', Courier, serif;
-    font-weight: normal;
+    font-family: 'pt_root_ui', Arial, serif;
+    font-weight: bold;
     font-style: normal;
+
+    margin: 15px;
+}
+
+.text{
+    color: #2A4C09;
+
+    margin: 15px;
+    padding: 15px;
+
+    background-color: #E0F19C;
+    border-color: #2A4C09;
+    border-width: medium;
+    border-radius: 10px;
 }
 
 audio{
@@ -81,10 +97,14 @@ audio{
     text-align: center;
     max-width: 400px;
     min-width: 300px;
+    margin: 15px;
 }
 
-button{
+button {
     width: 40%;
+
+    border-width: medium;
+    border-radius: 10px;
 }
 
 .small-btn{

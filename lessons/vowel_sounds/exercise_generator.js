@@ -138,9 +138,9 @@ function createFileName(w1, w2) {
 
 // Randomize array in-place using Durstenfeld shuffle algorithm
 function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
@@ -149,7 +149,6 @@ function shuffleArray(array) {
 function generateExercises(data){
     let max_exercises = 10;
     let card = document.querySelector(".card-template").content;
-
 
     let title = card.querySelector(".title");
     let audio = card.querySelector(".audio");
@@ -163,7 +162,7 @@ function generateExercises(data){
         document.importNode(wrapper, true)
     );
 
-    for(let i = 0; i < 21; i++) {
+    for(let i = 0; i < 15; i++) {
         title.innerHTML = "Exercise " + (i + 1) + ":";
         audio.src = createFileName(data[i][0], data[i][1]);
         audio.type = "audio/mpeg";
