@@ -46,8 +46,8 @@ const dataset = [
     ["bad", "mad", "s" ],
     ["talk", "call", "s" ],
     ["leave", "leaf", "s" ],
-    ["want", "wall", "b" ]
-    /*["dog", "dug", "d" ],
+    ["want", "wall", "b" ],
+    ["dog", "dug", "d" ],
     ["come", "calm", "d" ],
     ["sick", "tick", "s" ],
     ["sheep", "chick", "d" ],
@@ -85,7 +85,7 @@ const dataset = [
     ["pit", "knit", "s" ],
     ["kit", "kid", "s" ],
     ["lit", "hint", "s" ],
-    ["itch", "stitch", "s" ],
+    ["itch", "stitch", "s" ]/*
     ["twist", "wist", "s" ],
     ["ditch", "rich", "s" ],
     ["crypt", "shrift", "s" ],
