@@ -85,7 +85,7 @@ const dataset = [
     ["pit", "knit", "s" ],
     ["kit", "kid", "s" ],
     ["lit", "hint", "s" ],
-    ["itch", "stitch", "s" ]/*
+    ["itch", "stitch", "s" ],
     ["twist", "wist", "s" ],
     ["ditch", "rich", "s" ],
     ["crypt", "shrift", "s" ],
@@ -124,7 +124,7 @@ const dataset = [
     ["lot", "laud", "b" ],
     ["lawn", "laut", "s" ],
     ["hog", "hug", "d" ],
-    ["lodge", "lock", "s" ],
+    ["lodge", "lock", "s" ]/*
     ["blue", "glue", "s" ],
     ["glee", "flea", "s" ],
     ["blew", "tomb", "s" ],
