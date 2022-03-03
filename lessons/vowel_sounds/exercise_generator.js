@@ -124,11 +124,11 @@ const dataset = [
     ["lot", "laud", "b" ],
     ["lawn", "laut", "s" ],
     ["hog", "hug", "d" ],
-    ["lodge", "lock", "s" ]/*
+    ["lodge", "lock", "s" ],
     ["blue", "glue", "s" ],
     ["glee", "flea", "s" ],
     ["blew", "tomb", "s" ],
-    ["drew", "clue", "s" ]*/
+    ["drew", "clue", "s" ]
 ]
 
 // Generate the name of the audio file given the array elements
@@ -152,6 +152,7 @@ function generateExercises(data){
 
     let title = card.querySelector(".title");
     let audio = card.querySelector(".audio");
+    let text_answer = card.querySelector(".text-answer");
     let same_btn = card.querySelector(".same-btn");
     let diff_btn = card.querySelector(".diff-btn");
 
@@ -167,6 +168,7 @@ function generateExercises(data){
         audio.src = createFileName(data[i][0], data[i][1]);
         audio.type = "audio/mpeg";
         audio.load();
+        text_answer.innerHTML = data[i][0] + " - " + data[i][1];
         if (data[i][2] === "s") {
             same_btn.setAttribute("onclick", "correct(this)");
             diff_btn.setAttribute("onclick", "incorrect(this)");
