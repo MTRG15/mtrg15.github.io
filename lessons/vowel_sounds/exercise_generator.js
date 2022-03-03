@@ -86,7 +86,6 @@ const dataset = [
     ["kit", "kid", "s" ],
     ["lit", "hint", "s" ],
     ["itch", "stitch", "s" ],
-    ["twist", "wist", "s" ],
     ["ditch", "rich", "s" ],
     ["crypt", "shrift", "s" ],
     ["skit", "skip", "s" ],
