@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3272bfa6-b7ec-4300-8f5f-a13b114afe05" name="Default Changelist" comment="Fix: deleting a member of the sounds array that has no audio file" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="react-branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23e58fZ9p6rfLKoP6yqQjFtEVJ0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bayonetta\Hiccup\Dev\Git\mtrg15.github.io\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bayonetta\Hiccup\Dev\Git\mtrg15.github.io\lessons\vowel_sounds" />
+      <recent name="C:\Users\Bayonetta\Hiccup\Dev\Git\mtrg15.github.io\assets\resources" />
+      <recent name="C:\Users\Bayonetta\Hiccup\Dev\Git\mtrg15.github.io\css\custom-css" />
+      <recent name="C:\Users\Bayonetta\Hiccup\Dev\Git\mtrg15.github.io\css\custom-fonts\text-font" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3272bfa6-b7ec-4300-8f5f-a13b114afe05" name="Default Changelist" comment="" />
+      <created>1642081605798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642081605798</updated>
+      <workItem from="1642081697002" duration="8397000" />
+      <workItem from="1642090528958" duration="46000" />
+      <workItem from="1642090627074" duration="192000" />
+      <workItem from="1642092442856" duration="2995000" />
+      <workItem from="1642171339061" duration="16000" />
+      <workItem from="1642173832718" duration="4125000" />
+      <workItem from="1642182368674" duration="16732000" />
+      <workItem from="1642263437391" duration="276000" />
+      <workItem from="1642272980637" duration="5701000" />
+      <workItem from="1642291145077" duration="5463000" />
+      <workItem from="1642601452282" duration="175000" />
+      <workItem from="1642641873119" duration="1543000" />
+      <workItem from="1642701816795" duration="94000" />
+      <workItem from="1642701973428" duration="19000" />
+      <workItem from="1643301979784" duration="481000" />
+      <workItem from="1643642043323" duration="1034000" />
+      <workItem from="1646319948232" duration="2698000" />
+      <workItem from="1646329626047" duration="693000" />
+      <workItem from="1646337442020" duration="1870000" />
+      <workItem from="1646594470331" duration="47000" />
+    </task>
+    <task id="LOCAL-00001" summary="Comiting through webstorm">
+      <created>1642082283053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642082283053</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Testing custom fonts without mime fixes">
+      <created>1642085713547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642085713562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updating title font">
+      <created>1642087188304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642087188304</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updating title font">
+      <created>1642087409473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642087409473</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updating font css">
+      <created>1642087786526</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642087786526</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updating font css">
+      <created>1642088550575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642088550575</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixing paths">
+      <created>1642089503774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642089503774</updated>
+    </task>
+    <task id="LOCAL-00008" summary="more trying to fix fonts">
+      <created>1642094674368</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642094674368</updated>
+    </task>
+    <task id="LOCAL-00009" summary="more trying to fix fonts">
+      <created>1642095031240</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642095031240</updated>
+    </task>
+    <task id="LOCAL-00010" summary="more trying to fix fonts">
+      <created>1642095335243</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642095335243</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finishing actual exercise content">
+      <created>1642212771931</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642212771939</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updating redirection link">
+      <created>1642212969774</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642212969774</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixing width bigger than viewport">
+      <created>1642213477764</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1642213477764</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adding more exercises">
+      <created>1642263634957</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642263634957</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Customizing cards">
+      <created>1642277933666</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1642277933666</updated>
+    </task>
+    <task id="LOCAL-00016" summary="finishing up">
+      <created>1642295988022</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1642295988040</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixing padding on body top">
+      <created>1642296190215</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1642296190215</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixing title to match content">
+      <created>1642296636173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1642296636173</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding more audio files">
+      <created>1642642650623</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1642642650623</updated>
+    </task>
+    <task id="LOCAL-00020" summary="correcting audio file name for miffed_stiff.mp3">
+      <created>1643302021884</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1643302021884</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding information about &quot;Both are correct!&quot; answers to excercises">
+      <created>1643302411999</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643302411999</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update: adding the words corresponding to the sound file so the students can read what the sounds represent">
+      <created>1646322140754</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1646322140754</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update: adding the words corresponding to the sound file so the students can read what the sounds represent">
+      <created>1646322154045</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1646322154045</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update: adding the words corresponding to the sound file so the students can read what the sounds represent">
+      <created>1646331281921</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1646331281921</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fix: deleting a member of the sounds array that has no audio file">
+      <created>1646338003494</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1646338003494</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fix: deleting a member of the sounds array that has no audio file">
+      <created>1646338788842</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1646338788842</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Comiting through webstorm" />
+    <MESSAGE value="Testing custom fonts without mime fixes" />
+    <MESSAGE value="Updating title font" />
+    <MESSAGE value="Updating font css" />
+    <MESSAGE value="Fixing paths" />
+    <MESSAGE value="more trying to fix fonts" />
+    <MESSAGE value="Finishing actual exercise content" />
+    <MESSAGE value="Updating redirection link" />
+    <MESSAGE value="Fixing width bigger than viewport" />
+    <MESSAGE value="Adding more exercises" />
+    <MESSAGE value="Customizing cards" />
+    <MESSAGE value="finishing up" />
+    <MESSAGE value="fixing padding on body top" />
+    <MESSAGE value="Fixing title to match content" />
+    <MESSAGE value="Adding more audio files" />
+    <MESSAGE value="correcting audio file name for miffed_stiff.mp3" />
+    <MESSAGE value="Adding information about &quot;Both are correct!&quot; answers to excercises" />
+    <MESSAGE value="Update: adding the words corresponding to the sound file so the students can read what the sounds represent" />
+    <MESSAGE value="Fix: deleting a member of the sounds array that has no audio file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: deleting a member of the sounds array that has no audio file" />
+  </component>
+</project>
