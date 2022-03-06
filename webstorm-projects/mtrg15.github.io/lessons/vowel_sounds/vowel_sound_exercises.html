@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Vowel Sounds of English 01</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/idealang_favicon.png">
+
+    <!--  BOOTSTRAP CSS LIBRARIES  -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+
+    <!--  CUSTOM CSS LIBRARIES  -->
+    <link rel="stylesheet" href="../../css/custom_css/custom_style.css">
+
+    <!--  BOOTSTRAP JAVASCRIPT LIBRARIES  -->
+    <script src="../../js/bootstrap.js"></script>
+
+
+</head>
+<body data-spy="scroll" data-target="#menu" data-offset="300">
+
+    <div  class="container">
+        <h1 class="text">Vowel Sounds of English 01</h1>
+        <p class="info">In this exercise you have several audio files with <b>two words</b>.
+            <br><br>Some of them use the <b>same</b> vowel sound, while others have a <b>different</b> vowel sound.
+            <br><br>Can you notice if they are the same?
+            <br><br><b>Listen</b> to the audio files and <b>select</b> if the sounds are the same or different in each case.
+            <br><br>Sometimes, a word can have two pronunciations, depending on the region (like British and American English).
+            In these cases, <b>Both answers are correct!</b>
+        </p>
+    </div>
+
+    <!--                                 CONTENT                                       -->
+    <div id="content">
+
+    </div>
+
+    <footer>
+        <br><br><br><br><br>
+        <div class="row text-center justify-content-around text">
+            <h3>Do you want more exercises?</h3>
+            <button class="btn-info" onClick="window.location.reload()">Reload the page!</button>
+        </div>
+        <br><br><br><br><br>
+    </footer>
+    <!---------------------------------- TEMPLATES ----------------------------------->
+    <template class="card-template">
+        <!---------------------------------- CARD ---------------------------------->
+        <div class="card col-lg-9 text">
+            <div class="card-header">
+                <h2 class="title"></h2>
+            </div>
+            <div class="card-body">
+                <audio class="audio" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="card-footer">
+                <div><span>The words are: </span> <span class="text-answer"></span></div>
+                <button type="button" class="same-btn btn-primary">Same</button>
+                <button type="button" class="diff-btn btn-primary">Different</button>
+            </div>
+        </div>
+    </template>
+
+        <!--  CUSTOM JAVASCRIPT LIBRARIES  -->
+        <script src="../../js/custom-js/button-behavior.js"></script>
+        <script defer src="exercise_generator.js"></script>
+
+</body>
+</html>
