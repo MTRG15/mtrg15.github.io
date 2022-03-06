@@ -121,7 +121,6 @@ const dataset = [
     ["flaw", "slaw", "s" ],
     ["claw", "long", "s" ],
     ["lot", "laud", "b" ],
-    ["lawn", "laut", "s" ],
     ["hog", "hug", "d" ],
     ["lodge", "lock", "s" ],
     ["blue", "glue", "s" ],
@@ -146,7 +145,7 @@ function shuffleArray(array) {
 }
 
 function generateExercises(data){
-    let max_exercises = 10;
+    let max_exercises = 15;
     let card = document.querySelector(".card-template").content;
 
     let title = card.querySelector(".title");
@@ -162,7 +161,7 @@ function generateExercises(data){
         document.importNode(wrapper, true)
     );
 
-    for(let i = 0; i < 15; i++) {
+    for(let i = 0; i < max_exercises; i++) {
         title.innerHTML = "Exercise " + (i + 1) + ":";
         audio.src = createFileName(data[i][0], data[i][1]);
         audio.type = "audio/mpeg";
