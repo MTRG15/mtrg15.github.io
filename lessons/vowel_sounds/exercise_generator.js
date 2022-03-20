@@ -181,6 +181,6 @@ function generateExercises(data){
     }
 }
 
-//shuffleArray(dataset);
+shuffleArray(dataset);
 generateExercises(dataset);
 
