@@ -20,7 +20,6 @@ const dataset = [
     ["born", "burnt", "d" ],
     ["brick", "trick", "s" ],
     ["chance", "chalk", "d" ],
-    ["claw", "long", "s" ],
     ["cloth", "lawn", "b" ],
     ["come", "calm", "d" ],
     ["crypt", "shrift", "s" ],
@@ -55,10 +54,8 @@ const dataset = [
     ["kit", "kid", "s" ],
     ["last", "mast", "s" ],
     ["law", "laugh", "d" ],
-    ["lawn", "laut", "s" ],
     ["leave", "leaf", "s" ],
     ["Lee", "linch", "d" ],
-    ["lend", "mend", "s" ],
     ["linch", "leech", "d" ],
     ["lit", "hint", "s" ],
     ["live", "leave", "d" ],
@@ -102,7 +99,6 @@ const dataset = [
     ["sick", "tick", "s" ],
     ["skit", "skip", "s" ],
     ["slim", "lent", "d" ],
-    ["some", "come", "s" ],
     ["spilt", "nipped", "s" ],
     ["stop", "stool", "d" ],
     ["swell", "quench", "s" ],
@@ -113,7 +109,6 @@ const dataset = [
     ["teen", "dream", "s" ],
     ["tell", "well", "s" ],
     ["tent", "tint", "d" ],
-    ["twist", "wist", "s" ],
     ["ups", "oops", "d" ],
     ["urn", "port", "d" ],
     ["want", "wall", "b" ],
@@ -147,7 +142,7 @@ function shuffleArray(array) {
 }
 
 function generateExercises(data){
-    let max_exercises = dataset.length;
+    let max_exercises = 15;
     let card = document.querySelector(".card-template").content;
 
     let title = card.querySelector(".title");
@@ -186,6 +181,6 @@ function generateExercises(data){
     }
 }
 
-shuffleArray(dataset);
+//shuffleArray(dataset);
 generateExercises(dataset);
 
