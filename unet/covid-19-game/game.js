@@ -116,6 +116,16 @@ const textNodes = [
       }
     ]
   },
+  { // 02 - Llegando a la Escuela
+    id: 2,
+    text: 'Malindranio llega a la escuela, se despide de su papá y saluda a sus amigos, Filiberta y Feodoro\n\nFiliberta: \"¿Hiciste la tarea de castellano? Yo apenas pude terminarla anoche\"\n\nFeodoro: \"Epale, ¿Vió el partido del Barça ayer? Uy estuvo buenísimo ese penalti\"\n\nFiliberta: \"Ay no ya van a empezar a hablar de fútbol, vamos a clase mejor\"',
+    options: [
+      {
+        text: 'Ir a clase',
+        nextText: 3
+      }
+    ]
+  },
 ]
 
 startGame()
