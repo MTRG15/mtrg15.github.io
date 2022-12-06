@@ -2082,8 +2082,16 @@ El día parece transcurrir más lento de lo normal, ya que $jugador lo pasa imag
 $jugador recibe el tapabocas y se lo pone, cubriendo su boca y su nariz
 &lt;&lt;set $tapabocas = true&gt;&gt;\
 &lt;&lt;endif&gt;&gt;\
-En pocos minutos, llegan al cine, &lt;&lt;if $chofer_abuelo == true&gt;&gt; $abuelo&lt;&lt;else&gt;&gt;$padre&lt;&lt;endif&gt;&gt; deja a jugador y se queda escuchando a Ana Capra en la radio del carro
+En pocos minutos, llegan al cine, &lt;&lt;if $chofer_abuelo == true&gt;&gt; $abuelo&lt;&lt;else&gt;&gt;$padre&lt;&lt;endif&gt;&gt; deja a $jugador y enciende la radio
 
+&gt;$abuelo: &quot;...voy a poner Lana Capra mientras tanto...&quot;
+
+&gt;Radio: &quot;Romaaaance por ge-ne-ra-cio-nes con... Laaaannnaaaa Caaapraaa...&quot;
+&gt;Radio: &quot;Muy buenas noches a todos mis queridos ollentes...&quot;
+
+&gt;$abuelo: &quot;Qué voz tan espectacular...&quot;
+
+&gt;$abuelo: &quot;... qué voz tan espectacular...&quot;
 &lt;&lt;if $chofer_abuelo == true&gt;&gt; 
 &gt;$abuelo: &quot;Cuando salga viene para acá, yo voy a quedarme aquí agarrando aire&quot;
 &lt;&lt;else&gt;&gt;
@@ -2266,7 +2274,7 @@ $jugador se conecta al grupo de WhatsApp de sus amigos $ron y $hermione y lee al
 
 &gt;$hermione: &quot;Le pusieron ese nombre porque España era el único país que publicaba noticias de la pandemia, los otros países prohibieron hablar de eso durante la segunda guerra mundial, y muchísima gente se murió por eso&quot;
 
-&gt;$ron: &quot;Uy que ratas, y yo que pensaba que los políticos aquí eran malos&quot;
+&gt;$ron: &quot;Uy que desgraciados, y yo que pensaba que los políticos aquí eran malos&quot;
 
 &gt;$hermione: &quot;Si chamo, super interesante, ¿Se acuerda la parte de los franceses?&quot;
 
@@ -2681,7 +2689,6 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $corona_examen += 1&gt;&gt; \
 
 &gt;&quot;¿Cuál de las siguientes condiciones hacen a una persona más vulnerable a complicaciones del COVID-19?&quot;
-
 
 [[Diabetes, asma e hipertensión|C06-E1.2 - Correcto]]
 
