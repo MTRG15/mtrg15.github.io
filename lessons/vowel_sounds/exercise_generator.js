@@ -128,7 +128,7 @@ const dataset = [
 
 // Generate the name of the audio file given the array elements
 function createFileName(w1, w2) {
-    return "../../assets/audio-files/vowel_sounds/" + w1 + "_" + w2 + ".mp3";
+    return "audio/" + w1 + "_" + w2 + ".mp3";
 }
 
 // Randomize array in-place using Durstenfeld shuffle algorithm
