@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Bio Héroes" startnode="1" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="E572BF7E-69A9-4E48-8C81-BD825D18685F" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face {
+	<tw-storydata name="Bio Héroes" startnode="1" creator="Twine" creator-version="2.5.1" format="SugarCube" format-version="2.36.1" ifid="E572BF7E-69A9-4E48-8C81-BD825D18685F" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face {
 	font-display: swap;
 	font-family: Virgil;
 	src: url("Font/Virgil.woff2");
@@ -107,13 +107,14 @@ format("woff2"),
 	font-weight: normal;
 	font-style: normal;
 }
+
 .passage {
 	font-family: Virgil, sans-serif;
 }
+
 #story-title {display: none;}
 .image {
   text-align: center;
-  padding-top: 20px;
 }
 
 .icon{
@@ -124,7 +125,7 @@ format("woff2"),
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 50px;
+  	word-wrap: break-word;
 }
 
 .plus {
@@ -3324,7 +3325,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;hamburguesa&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra &lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra &lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 
 [[Pedir Hamburguesa|C03-A2 - COMPRANDO EN LA CANTINA]]
@@ -3340,7 +3341,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;tequeños&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra&lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra&lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Pedir tequeños|C03-A2 - COMPRANDO EN LA CANTINA]]
 
@@ -3357,7 +3358,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;pasteles&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra &lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Entonces $jugador compra &lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Pedir pasteles|C03-A2 - COMPRANDO EN LA CANTINA]]
 
@@ -3372,7 +3373,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;cachito&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Pedir cachitos|C03-B2 - COMPRANDO EN LA BODEGA]]
 
@@ -3387,7 +3388,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;buñuelo&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Pedir buñuelo|C03-B2 - COMPRANDO EN LA BODEGA]]
 
@@ -3402,7 +3403,7 @@ El esfuerzo mental de estudiar cansa a cualquiera, aunque no sea un deporte
 &lt;&lt;set $c03_comida = &quot;quesadilla&quot;&gt;&gt; \
 
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;/b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;Entonces $jugador compra &lt;b&gt;$c03_comida&lt;/b&gt;, ¿O quiere cambiar?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Pedir quesadilla|C03-B2 - COMPRANDO EN LA BODEGA]]
 
