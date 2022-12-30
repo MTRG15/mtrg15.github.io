@@ -115,7 +115,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
     height: 50px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! es-ES.js – Español (Castellano), by: Gerardo Galán. | Copyright © 2020 Thomas Michael Edwards <thomasmedwards@gmail.com>. All rights reserved. | Licensed under a BSD 2-clause "Simplified" License. */
 !function(){l10nStrings.identity="juego",l10nStrings.aborting="Abortar",l10nStrings.cancel="Cancelar",l10nStrings.close="Cerrar",l10nStrings.ok="OK",l10nStrings.errorTitle="Error",l10nStrings.errorToggle="Cambiar la vista de error",l10nStrings.errorNonexistentPassage='el pasaje "{passage}" no existe',l10nStrings.errorSaveMissingData="La partida requiere datos no encontrados. O el archivo cargado no es una partida guardada o la partida guardada está corrupta",l10nStrings.errorSaveIdMismatch="Partida errónea {identity}",l10nStrings._warningIntroLacking="Tu navegador carece o ha desactivado",l10nStrings._warningOutroDegraded=", este {identity} está funcionando en un modo degradado. Puedes continuar, sin embargo, algunas partes pueden no funcionar correctamente",l10nStrings.warningNoWebStorage="{_warningIntroLacking} el Almacenamiento Web API{_warningOutroDegraded}",l10nStrings.warningDegraded="{_warningIntroLacking} algunas de las capacidades requeridas por este {identity}{_warningOutroDegraded}",l10nStrings.debugBarToggle="Alternar la barra de depuración",l10nStrings.debugBarNoWatches="— no hay observadores estabecidos —",l10nStrings.debugBarAddWatch="Añadir observador",l10nStrings.debugBarDeleteWatch="Borrar observador",l10nStrings.debugBarWatchAll="Ver todo",l10nStrings.debugBarWatchNone="Borrar todo",l10nStrings.debugBarLabelAdd="Añadir",l10nStrings.debugBarLabelWatch="Ver",l10nStrings.debugBarLabelTurn="Girar",l10nStrings.debugBarLabelViews="Vistas",l10nStrings.debugBarViewsToggle="Alternar las vistas debug",l10nStrings.debugBarWatchToggle="Alternar el panel de observadores",l10nStrings.uiBarToggle="Alternar la barra de UI",l10nStrings.uiBarBackward="Volver atrás en la historia del {identity}",l10nStrings.uiBarForward="Avanzar en la historia del {identity}",l10nStrings.uiBarJumpto="Saltar a un punto específico de la {identity} historia",l10nStrings.jumptoTitle="Saltar A",l10nStrings.jumptoTurn="Girar",l10nStrings.jumptoUnavailable="No hay puntos de salto disponibles actualmente…",l10nStrings.savesTitle="Guardar",l10nStrings.savesDisallowed="Guardar se ha deshabilitado en este pasaje.",l10nStrings.savesEmptySlot="— Guardado vacío —",l10nStrings.savesIncapable="{_warningIntroLacking} las capacidades requeridas para proporcionar guardados, entonces los guardados han sido deshabilitados para esta sesión.",l10nStrings.savesLabelAuto="Autoguardado",l10nStrings.savesLabelDelete="Borrar",l10nStrings.savesLabelExport="Guardar en Disco…",l10nStrings.savesLabelImport="Cargar desde Disco…",l10nStrings.savesLabelLoad="Cargar",l10nStrings.savesLabelClear="Borrar todo",l10nStrings.savesLabelSave="Guardar",l10nStrings.savesLabelSlot="Espacio",l10nStrings.savesSavedOn="Guardado",l10nStrings.savesUnavailable="No se encontraron espacios de guardado…",l10nStrings.savesUnknownDate="desconocido",l10nStrings.settingsTitle="Ajustes",l10nStrings.settingsOff="Off",l10nStrings.settingsOn="On",l10nStrings.settingsReset="Usar predeterminados",l10nStrings.restartTitle="Reiniciar",l10nStrings.restartPrompt="¿Estás seguro de que quieres reiniciar? Todo progreso no guardado caerá en el olvido.",l10nStrings.shareTitle="Compartir",l10nStrings.alertTitle="Alerta",l10nStrings.autoloadTitle="Autocargar",l10nStrings.autoloadCancel="Ir al Comienzo",l10nStrings.autoloadOk="Cargar autoguardado",l10nStrings.autoloadPrompt="Un autoguardado existe ¿Cargarlo ahora o ir al comienzo?",l10nStrings.macroBackText="Atrás",l10nStrings.macroReturnText="Volver"}();
-</script><tw-tag name="data" color="blue"></tw-tag><tw-tag name="Day" color="purple"></tw-tag><tw-passagedata pid="1" name="PRESENTACIÓN" tags="" position="250,100" size="100,100">&lt;&lt;audio &quot;intro&quot; play&gt;&gt; \
+</script><tw-tag name="data" color="blue"></tw-tag><tw-tag name="Day" color="purple"></tw-tag><tw-passagedata pid="1" name="PRESENTACIÓN" tags="" position="250,100" size="100,100">&lt;&lt;audio &quot;intro&quot; volume 0 volume 0 fadein&gt;&gt; \
 &lt;&lt;type 1ms&gt;&gt; \
 !Bio Héroes
 Este es un juego de aventura de texto al estilo &quot;escoja su propia aventura&quot;
@@ -233,19 +233,15 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 
 [[Ir a la sala|C01-B - ¿TODO LISTO?]]</tw-passagedata><tw-passagedata pid="4" name="StoryCaption" tags="data" position="25,250" size="100,100">&lt;&lt;if $c01 == true&gt;&gt; \
 !!!Estado de $jugador
-
-/************ RIESGO *****************/
+/************ RIESGO *****************/\
 &lt;&lt;nobr&gt;&gt;
 Riesgo de Contagio:
 &lt;&lt;if $player.riesgo gt 0&gt;&gt; \
 &lt;&lt;for _i to 0; _i lt $player.riesgo; _i++&gt;&gt;
 &lt;&lt;print &quot;+&quot;&gt;&gt; \
 &lt;&lt;endfor&gt;&gt; \
-&lt;&lt;else&gt;&gt; \
-
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
-
 /************ ESTUDIO *****************/
 &lt;&lt;nobr&gt;&gt;
 Estudio:
@@ -253,11 +249,8 @@ Estudio:
 &lt;&lt;for _i to 0; _i lt $player.estudio; _i++&gt;&gt;
 &lt;&lt;print &quot;+&quot;&gt;&gt; \
 &lt;&lt;endfor&gt;&gt; \
-&lt;&lt;else&gt;&gt; \
-
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
-
 /************ OCIO *****************/
 &lt;&lt;nobr&gt;&gt;
 Ocio:
@@ -265,8 +258,6 @@ Ocio:
 &lt;&lt;for _i to 0; _i lt $player.ocio; _i++&gt;&gt;
 &lt;&lt;print &quot;+&quot;&gt;&gt; \
 &lt;&lt;endfor&gt;&gt; \
-&lt;&lt;else&gt;&gt; \
-
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 
@@ -277,8 +268,6 @@ Socialización:
 &lt;&lt;for _i to 0; _i lt $player.social; _i++&gt;&gt;
 &lt;&lt;print &quot;+&quot;&gt;&gt; \
 &lt;&lt;endfor&gt;&gt; \
-&lt;&lt;else&gt;&gt; \
-
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 
@@ -287,11 +276,11 @@ Objetos:
 &lt;&lt;if $antibacterial &gt;&gt;Gel Antibacterial&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $guantes &gt;&gt;Guantes Desechables&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $fidget &gt;&gt;Fidget Spinner&lt;&lt;/if&gt;&gt;
-&lt;&lt;endif&gt;&gt; \</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="data" position="25,100" size="100,100">&lt;!-- AUDIO CACHE--&gt;
+&lt;&lt;/if&gt;&gt; \</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="data" position="25,100" size="100,100">&lt;!-- AUDIO CACHE--&gt;
 &lt;&lt;cacheaudio &quot;intro&quot; &quot;Sounds/BioHeroes-Intro.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;success&quot; &quot;Sounds/BioHerores-Btn-Succ-Short.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;fail&quot; &quot;Sounds/BioHerores-Btn-Fail-Short.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;night&quot; &quot;Sounds/BioHerores-Night.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;night&quot; &quot;Sounds/BioHeroes-Night.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;main&quot; &quot;Sounds/BioHeroes-Main.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;success&quot; &quot;Sounds/BioHerores-Btn-Succ-Long.mp3&quot;&gt;&gt;
 
 &lt;!-- STORY VARIABLES--&gt;
 &lt;&lt;set $c01 = false&gt;&gt;
@@ -651,6 +640,8 @@ Después de un momento, el profesor dice a la clase:
 &gt;Profesor: &quot;Bueno muchachos, vamos a guardar todo y se dirigen hacia la cancha ordenadamente, continuamos otro día&quot;
 
 [[Guardar e ir a la cancha|C04-A - EN LA CANCHA]]</tw-passagedata><tw-passagedata pid="13" name="C04-A - EN LA CANCHA" tags="" position="400,250" size="100,100">!En la Cancha
+
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cancha.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador se dirige a la cancha con el resto del salón, cuando llegan, está todo solo
 
 Todos los estudiantes se sientan en el suelo, formando filas como es costumbre, y empiezan a conversar
@@ -682,6 +673,7 @@ Es difícil prestarle atención a ambos al mismo tiempo... $jugador debe elegir 
 &lt;&lt;set $boy.disposition -= 1&gt;&gt; \
 
 !Chisme de Estudiantes
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cancha.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador  y $ron se inclinan hacia atrás para acercarse y escuchar mejor, puede oír fragmentos de la conversación:
 
 &gt;Niña: &quot;... yo me asomé por la ventana y vi una ambulancia llegando por detrás de la escuela...&quot;
@@ -707,6 +699,7 @@ El profesor de castellano, habiendo terminado su llamada, se ve nervioso.
 [[&quot;Esperemos a ver que pasa&quot;|C04-D - EL ANUNCIO]]</tw-passagedata><tw-passagedata pid="15" name="C04-C - CHISME DE PROFESOR" tags="" position="550,400" size="100,100">&lt;&lt;set $boy.disposition += 1&gt;&gt; \
 
 !Chisme de Profesor
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cancha.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador se inclina hacia adelante para escuchar mejor
 
 &lt;div class=&quot;dialogue&quot;&gt;\
@@ -731,6 +724,7 @@ $jugador le cuenta lo que escuchó a $ron
 &lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;¡Uy que fino! ¿Qué habrá pasado? ¿Quién faltó hoy?&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[&quot;Esperemos a ver que pasa&quot;|C04-D - EL ANUNCIO]]</tw-passagedata><tw-passagedata pid="16" name="C04-D - EL ANUNCIO" tags="" position="475,550" size="100,100">!El Anuncio
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cancha.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 Mientras $jugador y $ron intentan escuchar más chismes, dentro de la escuela se escuchan pasos, conversaciones, y... ¿Bolsas plásticas?
 
 &lt;div class=&quot;dialogue&quot;&gt;\
@@ -844,6 +838,7 @@ Pasan unos 10 minutos, y entran los padres con caras pálidas, como si hubieran 
 &lt;img class=&quot;icon&quot; src=&quot;Images/padre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$padre: &quot;Los señores aquí nos van a explicar lo de la cuarentena esa...&quot;
 &lt;/p&gt;&lt;/div&gt;
 [[Entrar a la casa|C05-A - Instrucciones]]</tw-passagedata><tw-passagedata pid="19" name="C05-B - Cuarentena" tags="" position="475,1000" size="100,100">!¿Hay Preguntas?
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;&lt;if $c05_preguntas == true&gt;&gt; \
 &gt;Paramédicos: &quot;Como ya sabrán después todo este tiempo en pandemia, necesitamos que hagan cuarentena por al menos 10 días, y reportar sus síntomas a la escuela&quot;
 
@@ -1119,7 +1114,8 @@ Los tres amigos vuelven a la escuela, comiendo por el camino, al pasar por el qu
 &lt;/p&gt;&lt;/div&gt;
 
 [[Volver al salón|C04 - EVACUACIÓN]]</tw-passagedata><tw-passagedata pid="32" name="C05-A - Instrucciones" tags="" position="475,850" size="100,100">!¿Cuarentena?
-$jugador observa la sala
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+$jugador espera en la sala 
 
 Su abuela $abuela saluda a los paramédicos, parece que se conocen
 
@@ -1165,7 +1161,10 @@ Luego de ver las caras confusas de la familia, continúan
 
 &gt;Familia: &quot;Aaaaaaaaaahhhh okey&quot;
 
-[[Continuar con las preguntas|C05-B - Cuarentena]]</tw-passagedata><tw-passagedata pid="34" name="C06 - Día 1" tags="Day" position="675,1300" size="100,100">!Episodio $day
+[[Continuar con las preguntas|C05-B - Cuarentena]]</tw-passagedata><tw-passagedata pid="34" name="C06 - Día 1" tags="Day" position="675,1300" size="100,100">&lt;&lt;audio &quot;intro&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Episodio $day
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador se despierta al día siguiente, y comienza su rutina diaria: revisar el teléfono, levantarse y vestirse, ir al baño a cepillarse los dientes...
 
 Pero al salir de su habitación, le detiene su mamá, con dos tapabocas y guantes de limpieza puestos que le dice:
@@ -1184,7 +1183,6 @@ $jugador se devuelve a su habitación, recordando los sucesos del día anterior,
 
 [[Sentarse a comer en el comedor|C06-B2]]</tw-passagedata><tw-passagedata pid="36" name="C06 - Medidas Poco Atractivas" tags="" position="575,1600" size="100,100">!$madre Ignora lo que No le Gusta
 La mamá de $jugador finje estar ocupara en la cocina mientras escucha el comentario, pero luego de que se lo repite por segunda vez, contesta
-
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/madre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$madre: &quot;Ay pero mi vida, ¿Cómo vamos a comer todos separados así? La familia debe estar junta, ¡La comida es sagrada! Eso de estar comiendo sólo es muy feo&quot;
@@ -1231,6 +1229,8 @@ El padre de $jugador, que está esperando en la cocina dice
 &lt;/p&gt;&lt;/div&gt;
 La mamá de $jugador acepta a regañadientes, les lleva el desayuno a cada uno en su habitación e inician una llamada grupal por Whatsapp mientras comen
 
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+
 Esa mañana fue un poco... incómoda. Ni los padres ni los abuelos de $jugador utilizan mucho sus teléfonos, el tiempo transcurre más lento, hay silencios incómodos, pero poco a poco se acostumbran
 
 [[Continuar|C06-C]]</tw-passagedata><tw-passagedata pid="39" name="C06-B-C - Ofendiendo a la Matrona" tags="" position="550,1850" size="100,100">!Ofendiendo a la Matrona
@@ -1248,14 +1248,15 @@ La mamá de $jugador se come su arepa con guantes de latex, mientras su papá mi
 
 La abuela de $jugador entra a la sala, recoge su plato y se lo lleva a su habitación, donde se sienta a comer mientras ve televisión, ignorando las protestas de su hija
 
-[[Continuar|C06-C]]</tw-passagedata><tw-passagedata pid="40" name="C06-B1-D - Mala Opción" tags="" position="675,1800" size="100,100">!¿Qué Tiene de Malo?
+[[Continuar|C06-C]]</tw-passagedata><tw-passagedata pid="40" name="C06-B1-D - Mala Opción" tags="" position="675,1800" size="100,100">
+!¿Qué Tiene de Malo?
 &lt;&lt;set $player.riesgo += 1&gt;&gt; \
 &lt;&lt;set $mom.riesgo +=1&gt;&gt; \
 &lt;&lt;set $mom.disposition += 1&gt;&gt;\
 &lt;&lt;set $dad.riesgo +=1&gt;&gt; \
 &lt;&lt;set $grandpa.riesgo +=1&gt;&gt; \
 &lt;&lt;set $comer_juntos = true&gt;&gt; \
-
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/madre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$madre: &quot;Ay ¿Si ve? A nadie le gusta comer sin compañía, ¡Venga! Siéntese al lado mío, voy a sacarle un pedazo de la torta que hice para que complete el desayuno&quot;
 &lt;/p&gt;&lt;/div&gt;
@@ -1280,6 +1281,8 @@ El padre de $jugador, que está esperando en la cocina dice
 &lt;/p&gt;&lt;/div&gt;
 La mamá de $jugador acepta a regañadientes y les lleva el desayuno a cada uno en su habitación
 
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+
 Esa mañana, el desayuno fue un poco más... ruidoso de lo normal, 
 
 $madre intenta rezar y bendecir la comida de todos
@@ -1294,7 +1297,10 @@ A pesar de todo, la pasan bien con la dinámica
 
 La mamá de $jugador hace que todos avisen cuando necesitan ir al baño para evitar quedarse en el pasillo esperando, y aunque les da pena, es mucho más conveniente
 
-[[Continuar|X1 - Tiempo Libre]]</tw-passagedata><tw-passagedata pid="43" name="X1 - Tiempo Libre" tags="" position="2425,625" size="100,100">!En la Noche
+[[Continuar|X1 - Tiempo Libre]]</tw-passagedata><tw-passagedata pid="43" name="X1 - Tiempo Libre" tags="" position="2425,625" size="100,100">&lt;&lt;audio &quot;main&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;night&quot; loop volume 0 fadein&gt;&gt;\
+!En la Noche
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto-noche.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador se sienta en su cama después de cenar
 &lt;!-- ****************************** DIA 1 ************************************************************* --&gt;\
 &lt;&lt;if $day == 1&gt;&gt; \
@@ -1346,31 +1352,39 @@ Con la cuarentena llegando a su fin junto con las vacaciones, $jugador se siente
 Pero ahora tiene tiempo libre antes de dormir, puede hablar con sus amigos, con su familia, estudiar las clases del día, o simplemente sentarse a mirar memes en su teléfono hasta dormirse 
 
 &lt;b&gt;¿Qué debería hacer $jugador en su tiempo libre?&lt;/b&gt;
-
-&lt;&lt;if $day != 5&gt;&gt;[[Estudiar]]&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day != 5&gt;&gt;\
+[[Estudiar]]
+&lt;&lt;endif&gt;&gt;\
 
 [[Hablar con los amigos de la escuela]] 
 
 [[Hablar con su familia]]
 
 [[Ver TikToks hasta dormirse]]</tw-passagedata><tw-passagedata pid="44" name="Estudiar" tags="" position="2750,525" size="100,100">!Hay Que Estudiar
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto-noche.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador abre su correo electrónico con pereza, pensando &quot;bueno, es mejor estar al día con eso, espero no hayan mandado mucha tarea&quot;
 
 Leyendo las lecciones y revisando las grabaciones de la clases, $jugador toma notas y se pone al día con sus clases
 
-$ron le envía un par de mensajes preguntando por sus respuestas y $hermione le envía links a documentales de 2 horas sobre un tema relacionado a la clase, $jugador ve un par de minutos y se duerme rapidamente
+$ron le envía un par de mensajes preguntando por sus respuestas y $hermione le envía links a documentales de 2 horas sobre un tema relacionado a la clase, $jugador ve un par de minutos hasta que le da sueño
 
 &lt;&lt;set $player.estudio += 2&gt;&gt;
-[[Continuar|X1.2 - Fin del Día]]
+[[Irse a Dormir|X1.2 - Fin del Día]]
+
+[[Quedarse hablando con los amigos de la escuela|Hablar con los amigos de la escuela]] 
 </tw-passagedata><tw-passagedata pid="45" name="Hablar con sus amigos" tags="" position="3975,225" size="100,100">$jugador se conecta a las redes sociales y revisa los memes que le enviaron $ron y $hermione durante el día, haciendo comentarios como &quot;Si soy&quot;, &quot;Demasiado&quot;, y &quot;AJAJAASDFLKAJSDF&quot;
 
-</tw-passagedata><tw-passagedata pid="46" name="Hablar con su familia" tags="" position="2600,700" size="100,100">Separados por las puertas y ventanas de los cuartos, $jugador puede acercarse desde el pasillo a conversar con su familia sin romper la cuarentena
+</tw-passagedata><tw-passagedata pid="46" name="Hablar con su familia" tags="" position="2600,700" size="100,100">!Tiempo en Familia
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/pasillo.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+Separados por las puertas y ventanas de los cuartos, $jugador puede acercarse desde el pasillo a conversar con su familia sin romper la cuarentena
 
 &lt;b&gt;¿Con quién desea hablar $jugador?&lt;/b&gt;
 
 [[Hablar con sus padres]]
 
-[[Hablar con sus abuelos]]</tw-passagedata><tw-passagedata pid="47" name="Ver TikToks hasta dormirse" tags="" position="2750,400" size="100,100">$jugador abre la aplicación de TikTok en su teléfono y el resto del universo parece dejar de existir, sus dedos se mueven de forma automática, buscando el siguiente video, algunos le causan risa, otros son tiernos, otros son mediocres pero igual los ve
+[[Hablar con sus abuelos]]</tw-passagedata><tw-passagedata pid="47" name="Ver TikToks hasta dormirse" tags="" position="2750,250" size="100,100">!Un Ratico de TicToc
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto-noche.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+$jugador abre la aplicación de TicToc en su teléfono y el resto del universo parece dejar de existir, sus dedos se mueven de forma automática, buscando el siguiente video, algunos le causan risa, otros son tiernos, otros son mediocres pero igual los ve
 
 Pasan gatos, perros, personas haciendo cosas graciosas, bailes... información que parece cierta... publicidad... y finalmente se duerme
 
@@ -1378,6 +1392,7 @@ Pasan gatos, perros, personas haciendo cosas graciosas, bailes... información q
 &lt;&lt;set $dad.disposition += 1&gt;&gt; \
 &lt;&lt;set $mom.disposition += 1&gt;&gt; \
 &lt;&lt;set $player.social += 1&gt;&gt; \
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/pasillo.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador toca la puerda de la habitación de sus padres
 
 &lt;!-- *********************** DIA 1 ****************************** --&gt; \
@@ -1563,6 +1578,7 @@ $padre se sonroja pero no niega la acusación
 &lt;&lt;set $grandpa.disposition += 1&gt;&gt; \
 &lt;&lt;set $grandma.disposition += 1&gt;&gt; \
 &lt;&lt;set $player.social += 1&gt;&gt; \
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/pasillo.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador toca la puerta de la habitación de sus abuelos
 
 &lt;!-- *********************** DIA 1 ****************************** --&gt; \
@@ -1817,8 +1833,11 @@ Se ha guardado la partida
 [[Continuar|C06 - Día 6]]
 &lt;&lt;endif&gt;&gt;\
 
-</tw-passagedata><tw-passagedata pid="51" name="C06 - Día 2" tags="Day" position="1500,1400" size="100,100">!Episodio $day
-Al día siguiente, $jugador se despierta con un ruido que viene del pasillo
+</tw-passagedata><tw-passagedata pid="51" name="C06 - Día 2" tags="Day" position="1500,1400" size="100,100">&lt;&lt;audio &quot;night&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Episodio $day
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+Al día siguiente, $jugador se despierta con un ruido que viene de la sala
 
 Se escuchan pasos y llaves tintineando...
 
@@ -1841,7 +1860,10 @@ $jugador ya conoce lo religioso que es su abuelo, y tambien lo terco que es para
 
 [[Dejar que se vaya|C06-C1 - Abuelo se Va Solo]]
 
-[[Continuar|X1 - Tiempo Libre]]</tw-passagedata><tw-passagedata pid="52" name="C06 - Día 3" tags="Day" position="2050,1400" size="100,100">!Episodio $day
+[[Continuar|X1 - Tiempo Libre]]</tw-passagedata><tw-passagedata pid="52" name="C06 - Día 3" tags="Day" position="2050,1400" size="100,100">&lt;&lt;audio &quot;night&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Episodio $day
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 A medida que se acaba la comida en la casa, la madre de $jugador se pone más y más nerviosa 
 
 $jugador se despierta escuchando una conversación de sus padres
@@ -1882,7 +1904,10 @@ $madre está tan apenada que se sonroja
 [[Corregir la pronunciación de &quot;delivery&quot;|C06-E3 - El Ticher de Inglés]]
 
 
-</tw-passagedata><tw-passagedata pid="53" name="C06 - Día 4" tags="Day" position="2925,1400" size="100,100">!Episodio $day
+</tw-passagedata><tw-passagedata pid="53" name="C06 - Día 4" tags="Day" position="2925,1400" size="100,100">&lt;&lt;audio &quot;night&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Episodio $day
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 Todos están bastante aburridos de la cuarentena, los primeros días fueron divertidos para $jugador pero la monotonía del encierro está empezando sentirse, la familia no habla mucho durante el desayuno, y se escuchan bostezos cada cierto tiempo
 
 Mientras $jugador aún sigue durmiendo, su teléfono empieza a sonar, es su amigo $ron
@@ -1891,7 +1916,10 @@ Mientras $jugador aún sigue durmiendo, su teléfono empieza a sonar, es su amig
 
 [[Contestar|C06-A - La Invitación]]
 
-[[Ignorar la llamada y seguir durmiendo|C06-B - Ignorado]]</tw-passagedata><tw-passagedata pid="54" name="C06 - Día 5" tags="Day" position="3900,700" size="100,100">!Episodio $day
+[[Ignorar la llamada y seguir durmiendo|C06-B - Ignorado]]</tw-passagedata><tw-passagedata pid="54" name="C06 - Día 5" tags="Day" position="3900,700" size="100,100">&lt;&lt;audio &quot;night&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Episodio $day
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 La cuarentena ha sido un desafío para toda la familia, especialmente para $jugador, que debe cumplir las normas de bioseguridad y estudiar al mismo tiempo
 
 Al despertarse y revisar el sitio web de la escuela, descubre que le asignaron un examen
@@ -1920,7 +1948,9 @@ $jugador estaba confiando que no hicieran evaluaciones durante la cuarentena, tu
 
 [[Comenzar el examen ya|C06-E1 - Comenzar el Examen]]
 
-[[Estudiar a solas|C06-E2 - Estudiar a Solas]]</tw-passagedata><tw-passagedata pid="55" name="C06 - Día 6" tags="Day" position="3400,50" size="100,100">!Fin de Temporada
+[[Estudiar a solas|C06-E2 - Estudiar a Solas]]</tw-passagedata><tw-passagedata pid="55" name="C06 - Día 6" tags="Day" position="3400,50" size="100,100">&lt;&lt;audio &quot;night&quot; fadeout&gt;&gt;\
+&lt;&lt;audio &quot;main&quot; loop volume 0 fadein&gt;&gt;\
+!Fin de Temporada
 A la mañana siguiente, toda la familia de $jugador se despierta ansiosa
 
 &lt;div class=&quot;dialogue&quot;&gt;\
@@ -1944,6 +1974,7 @@ Cuando es el turno de $jugador, se siente un poco incómodo, y le dan ganas de e
 &gt;Enfermero: &quot;En el transcurso del día le contactamos para darles los resultados&quot;
 
 [[Continuar|Resultados Finales]]</tw-passagedata><tw-passagedata pid="56" name="C06 - Día 7" tags="Day" position="4400,75" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="C06 - Día 8" tags="Day" position="4275,100" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="C06 - Día 9" tags="Day" position="4100,100" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="C06 - Día 10" tags="Day" position="3975,100" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="C06-E1 - Recordar la Cuarentena" tags="" position="1625,1575" size="100,100">!¿La Cuarentena?
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;¿Ay pa qué me acuerda ujté de esas cosas? Yo sólamente quiero ir a misa a darle gracias a Dios por darme salud ¿Qué tiene eso de malo?&quot;
 &lt;/p&gt;&lt;/div&gt;
@@ -1958,6 +1989,7 @@ Cuando es el turno de $jugador, se siente un poco incómodo, y le dan ganas de e
 [[&quot;Puede ir, pero lo voy a acompañar para ayudarle a seguir las normas de bioseguridad&quot;|C06-E3 - Acompañando a Misa]]
 
 </tw-passagedata><tw-passagedata pid="61" name="C06-E2 - Salga con Cuidado" tags="" position="1150,1575" size="100,100">!Salga con Cuidado
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador le recuerda al abuelo que debe usar tapabocas y mantener distancia con las personas durante la misa
 
 &lt;div class=&quot;dialogue&quot;&gt;\
@@ -1983,6 +2015,8 @@ $jugador se arregla y sale con su abuelo a la iglesia.
 
 Por el camino $jugador le recuerda en múltiples ocasiones que el tapabocas debe cubrir la nariz también, y no debe quitárselo para hablar con la gente. $abuelo está tan feliz de que lo acompañen a misa que hace caso sin mucha objeción
 
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/iglesia-exterior.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
+
 Durante la misa se dan cuenta que ahora las bancas de la iglesia están marcadas para dejar espacio entre los asientos, lo que facilita mantener la distancia entre las personas que visitan la iglesia. Algunas personas ignoran esto, pero $jugador y su abuelo logran mantenerse alejados del resto de personas por la mayor parte de la misa
 
 [[Continuar|C06-C2 - Abuelo se Va Acompañado]]</tw-passagedata><tw-passagedata pid="63" name="C06-C1 - Abuelo se Va Solo" tags="" position="1100,1875" size="100,100">!$abuelo Se Va Solo a Misa
@@ -1993,6 +2027,8 @@ Durante la misa se dan cuenta que ahora las bancas de la iglesia están marcadas
 &lt;&lt;set $player.social -= 1&gt;&gt;\
 &lt;&lt;set $abuelo_se_va_solo = true&gt;&gt; \
 $abuelo se va solo a misa como de costumbre, llevando el tapabocas en el cuello, y sin mantener distanciamiento social...
+
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 
 Después de un par de horas, regresa a casa con su tapabocas en el bolsillo, su hija $madre lo regaña a él y a $jugador por dejarlo salir cuando se supone que están en cuarentena
 
@@ -2037,6 +2073,7 @@ $jugador regresa al cuarto, se siente un poco mal de que le regañaran
 &lt;&lt;set $grandpa.disposition -= 1&gt;&gt; \
 &lt;&lt;set $player.ocio -= 1&gt;&gt;\
 &lt;&lt;set $player.social -= 1&gt;&gt; \
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/pasillo.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;¿De verdá? ¿Cuándo salió eso? Uy... estará grave la vaina con la peste... Yo mejor me quedo aquí, ya veré cómo arreglo con Dios...&quot;
 &lt;/p&gt;&lt;/div&gt;
@@ -2051,7 +2088,7 @@ $jugador se siente un poco culpable por decir una mentira, pero se reafirma que 
 &lt;&lt;set $mom.disposition -= 1&gt;&gt; \
 &lt;&lt;set $grandma.disposition -= 1&gt;&gt; \
 &lt;&lt;set $player.social -= 1&gt;&gt;\
-
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;Yo sólamente estoy llendo a la casa de Dios, allá no va la gente con peste, a mi no me va a pasar nada porque Dios protege de todos los males a sus siervos más fieles...&quot;
 &lt;/p&gt;&lt;/div&gt;
@@ -2083,6 +2120,8 @@ $jugador se siente un poco mal del altercado, siente que pudo haber actuado mejo
 &lt;&lt;set $grandpa.disposition += 1&gt;&gt; \
 &lt;&lt;set $mom.disposition += 1&gt;&gt; \
 &lt;&lt;set $player.social +=1&gt;&gt; \
+
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 
 $jugador vuelve a casa con su abuelo, y se encuentran con su mamá esperándolos
 
@@ -2121,6 +2160,7 @@ $abuelo hace caso, pero no sin rezongar. A pesar del regaño se siente feliz de 
 Cerrando sus ojos, vuelve a dormir un rato más...
 
 [[Continuar|C06-C1 - Solucionan Ellos]]</tw-passagedata><tw-passagedata pid="69" name="C06-E2 - Recordar la Bioseguridad" tags="" position="2225,1550" size="100,100">!La Bioseguridad Otra Vez
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/madre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$madre: &quot;¿Cómo hacemos para ir al mercado en cuarentena entonces $jugador?&quot;
 &lt;/p&gt;&lt;/div&gt;
@@ -2135,6 +2175,7 @@ Cerrando sus ojos, vuelve a dormir un rato más...
 
 
 </tw-passagedata><tw-passagedata pid="70" name="C06-E3 - El Ticher de Inglés" tags="" position="2425,1550" size="100,100">!Ticher de Inglés
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador puede ser muy jóven para opinar en problemas de adultos, pero recuerda muy bien los cursos de inglés que le obligan a hacer desde hace años
 
 Con esta determinación se levanta, se pone su tapabocas, y marcha a la cocina para decir en voz alta
@@ -2159,7 +2200,7 @@ $jugador se creyó tener astucia al intervenir en la conversación, pero no espe
 &lt;&lt;set $dad.disposition += 0.5&gt;&gt; \
 &lt;&lt;set $player.ocio += 0.5&gt;&gt; \
 &lt;&lt;set $seguir_durmiendo = true&gt;&gt; \
-
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 Más tarde, $jugador se despierta con energía tras haber dormido tanto
 
 A los pocos minutos escucha la puerta de la entrada y a sus padres entrando con el mercado
@@ -2315,6 +2356,7 @@ $jugador conoce lo intenso que puede ser $ron no se detendrá hasta que le conte
 &lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;¡SIIII! Voy a decirle a mi papá, si voy con usté que es buen estudiante seguro me dice que si&quot;
 &lt;/p&gt;&lt;/div&gt;
 &lt;&lt;if $biocine == true&gt;&gt;\
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/sala.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 $jugador le pide permiso a sus padres, explicándoles que hay normas de seguridad para entrar al cine
 &lt;&lt;endif&gt;&gt; \
 &lt;!-- SI MADRE TIENE BUENA DISPOSICION--&gt; \
@@ -2378,6 +2420,7 @@ $madre mira a $jugador con aprehensión y le hace la cruz mientras dice
 &lt;img class=&quot;icon&quot; src=&quot;Images/madre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$madre: &quot;Si, con su abuelo que se escapa para ir a misa, y yo tratando de hacer rendir el mercado para no romper la cuarentena, mejor vaya a estudiar un rato&quot;
 &lt;/p&gt;&lt;/div&gt;
 $jugador se devuelve triste a su cuarto
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 /* SI HAY DISPOSICIÓN CON ABUELO */
 &lt;&lt;if $grandpa.disposition gte 2 &gt;&gt; \
 &lt;&lt;set $ir_a_cine = true&gt;&gt; \
@@ -2397,7 +2440,7 @@ $jugador regresa con su papá y le muestra el dinero. $padre está a punto de de
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/padre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$padre: &quot;Hmmmm buejno puej, está bien, tome las llaves, pero no se tarden mucho&quot;
 &lt;/p&gt;&lt;/div&gt;
-$jugador va a su cuarto a arreglarse mientras su abuelo prepara el carro
+$jugador va a arreglarse mientras su abuelo prepara el carro
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;endif&gt;&gt; \
 
@@ -2418,6 +2461,7 @@ $ron: &quot;!Por favooooooooooooooor! ¡Quiero ver &lt;b&gt;La Vengación&lt;/b&
 [[Cambiar de opinion e ir a cine|C06-B - Quiero Cine]]
 
 [[Rechazar la invitación definitivamente|C06-C2 - No Quiero Cine]]</tw-passagedata><tw-passagedata pid="82" name="C06-C2 - No Quiero Cine" tags="" position="3275,1750" size="100,100">!Cancelado el Cine
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cuarto.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 Después de contarle a $ron lo que pasó, este grita
 
 &lt;div class=&quot;dialogue&quot;&gt;\
@@ -2508,6 +2552,7 @@ En la entrada del cine, $jugador es detenido por un trabajador que le apunta al 
 Luego de un momento, el aparato hace un &quot;bip&quot; y le dejan pasar 
 
 !La Película
+&lt;div class=&quot;image&quot;&gt;&lt;img src=&quot;Images/cine.jpg&quot; width=&quot;50%&quot;&gt;&lt;/div&gt;
 /*insertar imagen de la vengación*/
 $ron disfrutó mucho la película, pasó todo el rato boquiabierto con los efectos visuales
 
@@ -2602,7 +2647,7 @@ Pero ahora $jugador debe hablar con $ron para decirle que no le dieron permiso p
 [[Cancelar la salida|C06-C2 - No Quiero Cine]] 
 &lt;&lt;endif&gt;&gt; \
 
-</tw-passagedata><tw-passagedata pid="87" name="Hablar con los amigos de la escuela" tags="" position="2750,250" size="100,100">!Hablar con Los Amigos
+</tw-passagedata><tw-passagedata pid="87" name="Hablar con los amigos de la escuela" tags="" position="2750,375" size="100,100">!Hablar con Los Amigos
 &lt;&lt;set $boy.disposition += 1&gt;&gt; \
 &lt;&lt;set $girl.disposition += 1&gt;&gt; \
 &lt;&lt;set $player.social += 1&gt;&gt; \
@@ -3609,7 +3654,8 @@ $jugador se conecta al grupo de sus amigos y les comenta los resultados
 &lt;/p&gt;&lt;/div&gt;
 &lt;&lt;endif&gt;&gt; \
 
-[[Fin de juego]]</tw-passagedata><tw-passagedata pid="116" name="Fin de juego" tags="" position="3875,450" size="100,100">!Fin de Juego
+[[Fin de juego]]</tw-passagedata><tw-passagedata pid="116" name="Fin de juego" tags="" position="3875,450" size="100,100">&lt;&lt;audio &quot;success&quot; volume 0.5 play&gt;&gt;
+!Fin de Juego
 Y así termina la historia de $jugador, esperemos que estas experiencias le ayuden a cuidarse mejor en el futuro
 
 !Gracias por jugar
