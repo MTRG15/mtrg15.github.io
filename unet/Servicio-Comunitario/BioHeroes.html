@@ -263,6 +263,12 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;for _i to 0; _i lt $player.riesgo; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
 &lt;&lt;endfor&gt;&gt; \
+&lt;&lt;else&gt;&gt;\
+  &lt;&lt;if $player.riesgo lt 0&gt;&gt;\
+    &lt;&lt;for _i to 0; _i gt $player.riesgo; _i--&gt;&gt;
+    &lt;img class=&quot;plus&quot; src=&quot;Images/Minus.svg&quot; height=&quot;20px&quot; width=&quot;20px&quot;&gt;\
+    &lt;&lt;endfor&gt;&gt;\
+  &lt;&lt;endif&gt;&gt;\
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 /************ ESTUDIO *****************/
@@ -272,15 +278,27 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;for _i to 0; _i lt $player.estudio; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
 &lt;&lt;endfor&gt;&gt; \
+&lt;&lt;else&gt;&gt;\
+  &lt;&lt;if $player.estudio lt 0&gt;&gt;\
+    &lt;&lt;for _i to 0; _i gt $player.estudio; _i--&gt;&gt;
+    &lt;img class=&quot;plus&quot; src=&quot;Images/Minus.svg&quot; height=&quot;20px&quot; width=&quot;20px&quot;&gt;\
+    &lt;&lt;endfor&gt;&gt;\
+  &lt;&lt;endif&gt;&gt;\
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 /************ OCIO *****************/
 &lt;&lt;nobr&gt;&gt;
 &lt;img src=&quot;Images/ocio.svg&quot; height=&quot;30px&quot;&gt;
 &lt;&lt;if $player.ocio gt 0&gt;&gt; \
-&lt;&lt;for _i to 0; _i lt $player.ocio; _i++&gt;&gt;
-&lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
-&lt;&lt;endfor&gt;&gt; \
+  &lt;&lt;for _i to 0; _i lt $player.ocio; _i++&gt;&gt;
+  &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
+  &lt;&lt;endfor&gt;&gt; \
+&lt;&lt;else&gt;&gt;\
+  &lt;&lt;if $player.ocio lt 0&gt;&gt;\
+    &lt;&lt;for _i to 0; _i gt $player.ocio; _i--&gt;&gt;
+    &lt;img class=&quot;plus&quot; src=&quot;Images/Minus.svg&quot; height=&quot;20px&quot; width=&quot;20px&quot;&gt;\
+    &lt;&lt;endfor&gt;&gt;\
+  &lt;&lt;endif&gt;&gt;\
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 /************ SOCIALIZACION *****************/
@@ -290,6 +308,12 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;for _i to 0; _i lt $player.social; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
 &lt;&lt;endfor&gt;&gt; \
+&lt;&lt;else&gt;&gt;\
+  &lt;&lt;if $player.social lt 0&gt;&gt;\
+    &lt;&lt;for _i to 0; _i gt $player.social; _i--&gt;&gt;
+    &lt;img class=&quot;plus&quot; src=&quot;Images/Minus.svg&quot; height=&quot;20px&quot; width=&quot;20px&quot;&gt;\
+    &lt;&lt;endfor&gt;&gt;\
+  &lt;&lt;endif&gt;&gt;\
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 
@@ -1401,7 +1425,7 @@ Leyendo las lecciones y revisando las grabaciones de la clases, $jugador toma no
 
 $ron le envía un par de mensajes preguntando por sus respuestas y $hermione le envía links a documentales de 2 horas sobre un tema relacionado a la clase, $jugador ve un par de minutos hasta que le da sueño
 
-&lt;&lt;set $player.estudio += 2&gt;&gt;
+&lt;&lt;set $player.estudio += 1&gt;&gt;
 [[Irse a Dormir|X1.2 - Fin del Día]]
 
 [[Quedarse hablando con los amigos de la escuela|Hablar con los amigos de la escuela]] 
@@ -2952,7 +2976,7 @@ Apenas puede recordar un par de cosas dijo $hermione en algún momento, pero no 
 
 ¡ $jugador no sabe casi nada del examen!
 &lt;&lt;endif&gt;&gt; \
-&lt;&lt;if $player.estudio gt 0 and $player.estudio lt 5&gt;&gt; \
+&lt;&lt;if $player.estudio gt 0 and $player.estudio lt 4&gt;&gt; \
 ... Y no se sabe la primera pregunta... pero la siguiente sí
 
 Puede contestar algunas, pero otras no tiene idea
