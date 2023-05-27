@@ -129,8 +129,7 @@ html {
 }
 
 .plus {
-	padding-top: 5px;
-  	padding-bottom: 5px;
+
 }
 
 .objeto {
@@ -255,10 +254,10 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;/if&gt;&gt;
 
 [[Ir a la sala|C01-B - ¿TODO LISTO?]]</tw-passagedata><tw-passagedata pid="4" name="StoryCaption" tags="data" position="25,250" size="100,100">&lt;&lt;if $c01 == true&gt;&gt; \
-&lt;img src=&quot;Images/estado.svg&quot; width=&quot;100%&quot;&gt;
+!!!Estado de Personaje
 /************ RIESGO *****************/\
 &lt;&lt;nobr&gt;&gt;
-&lt;img src=&quot;Images/riesgo.svg&quot; height=&quot;30px&quot;&gt;
+Riesgo:
 &lt;&lt;if $player.riesgo gt 0&gt;&gt; \
 &lt;&lt;for _i to 0; _i lt $player.riesgo; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
@@ -273,7 +272,7 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;/nobr&gt;&gt;
 /************ ESTUDIO *****************/
 &lt;&lt;nobr&gt;&gt;
-&lt;img src=&quot;Images/estudio.svg&quot; height=&quot;30px&quot;&gt;
+Estudio:
 &lt;&lt;if $player.estudio gt 0&gt;&gt; \
 &lt;&lt;for _i to 0; _i lt $player.estudio; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
@@ -288,7 +287,7 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;/nobr&gt;&gt;
 /************ OCIO *****************/
 &lt;&lt;nobr&gt;&gt;
-&lt;img src=&quot;Images/ocio.svg&quot; height=&quot;30px&quot;&gt;
+Ocio:
 &lt;&lt;if $player.ocio gt 0&gt;&gt; \
   &lt;&lt;for _i to 0; _i lt $player.ocio; _i++&gt;&gt;
   &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
@@ -303,7 +302,7 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;/nobr&gt;&gt;
 /************ SOCIALIZACION *****************/
 &lt;&lt;nobr&gt;&gt;
-&lt;img src=&quot;Images/social.svg&quot; height=&quot;30px&quot;&gt;
+Socialización:
 &lt;&lt;if $player.social gt 0&gt;&gt; \
 &lt;&lt;for _i to 0; _i lt $player.social; _i++&gt;&gt;
 &lt;img class=&quot;plus&quot; src=&quot;Images/Plus.svg&quot; height=&quot;20px&quot;&gt;\
@@ -317,7 +316,7 @@ Desde el pasillo llega el sonido de los refunfuños del padre de $jugador mientr
 &lt;&lt;endif&gt;&gt; \
 &lt;&lt;/nobr&gt;&gt;
 
-&lt;img src=&quot;Images/objetos.svg&quot; height=&quot;30px&quot;&gt;
+Objetos:
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $tapabocas &gt;&gt;&lt;img class=&quot;objeto&quot; src=&quot;Images/tapabocas.svg&quot;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $antibacterial &gt;&gt;&lt;img class=&quot;objeto&quot; src=&quot;Images/antibacterial.svg&quot;&gt;&lt;&lt;/if&gt;&gt;
@@ -2374,7 +2373,7 @@ Algunas personas usan tapabocas, pero muchas otras no, esto hace difícil para l
 
 Luego de bañarse, $jugador regresa a su cuarto
 
-[[C06-F - Fin de Día de Mercado]]</tw-passagedata><tw-passagedata pid="71" name="C06-F - Fin de Día de Mercado" tags="" position="2150,2125" size="100,100">El resto del día transcurre sin novedad, con la excepción de que llaman a $jugador a ayudar a arreglar las verduras
+[[Continuar|C06-F - Fin de Día de Mercado]]</tw-passagedata><tw-passagedata pid="71" name="C06-F - Fin de Día de Mercado" tags="" position="2150,2125" size="100,100">El resto del día transcurre sin novedad, con la excepción de que llaman a $jugador a ayudar a arreglar las verduras
 
 [[Continuar|X1 - Tiempo Libre]] </tw-passagedata><tw-passagedata pid="72" name="C06-A - La Invitación" tags="" position="2925,1525" size="100,100">!Contestando la Llamada
 Apenas acepta la llamada escucha a la voz de su amigo emocionado
@@ -3058,7 +3057,7 @@ $hermione se exaspera cuando $jugador y $ron la llaman y le piden que les expliq
 &lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;... Aish, está bien, busquen sus cuadernos&quot;
 &lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
-&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Va todo lo hasta el capítulo 8 del libro, hay varios ejercicios tipo caso. Y al final&lt;/b&gt;hay un cuestionario del curso de bioseguridad&lt;/b&gt; que hicimos, vale 5 puntos sobre la materia&quot;
+&lt;img class=&quot;icon&quot; src=&quot;Images/hermione-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$hermione: &quot;Va todo lo hasta el capítulo 8 del libro, hay varios ejercicios tipo caso. Y al final&lt;b&gt;hay un cuestionario del curso de bioseguridad&lt;/b&gt; que hicimos, vale 5 puntos sobre la materia&quot;
 &lt;/p&gt;&lt;/div&gt;
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/ron-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$ron: &quot;=&#39;(&quot;
@@ -3461,12 +3460,12 @@ Nombre: $madre
 &lt;&lt;if $mom.riesgo gt 1&gt;&gt; \
 &lt;&lt;set $mom.covid = true&gt;&gt; \
 Conteo de leucocitos: Alto
-Presensia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
 
 $madre se lleva una mano al pecho y palidece
 &lt;&lt;else&gt;&gt; \
 Conteo de leucocitos: Normal
-Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/madre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$madre: &quot;Ay ya sabía yo, si soy la que más se cuida en esta casa&quot;
@@ -3488,14 +3487,14 @@ Nombre: $padre
 &lt;&lt;if $dad.riesgo gt 1&gt;&gt; \
 &lt;&lt;set $dad.covid = true&gt;&gt; \
 Conteo de leucocitos: Alto
-Presensia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/padre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$padre: &quot;¡Cónchale! ¡No puede ser!&quot;
 &lt;/p&gt;&lt;/div&gt;
 &lt;&lt;else&gt;&gt; \
 Conteo de leucocitos: Normal
-Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/padre-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$padre: &quot;¿Vió? Toda esa guachafita y no me pasó nada&quot;
@@ -3520,7 +3519,7 @@ Nombre: $abuelo
 &lt;&lt;if $grandpa.riesgo gt 1&gt;&gt; \
 &lt;&lt;set $grandpa.covid = true&gt;&gt; \
 Conteo de leucocitos: Alto
-Presensia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;¡Ay no! Hasta aquí llegué yo&quot;
@@ -3530,7 +3529,7 @@ Presensia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
 &lt;/p&gt;&lt;/div&gt;
 &lt;&lt;else&gt;&gt; \
 Conteo de leucocitos: Normal
-Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;Ay gracias al Santo Cristo que me cuida y me protege de todos los males&quot;
@@ -3550,7 +3549,7 @@ Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 !Resultados de Test PCR - SARS-CoV-2
 Nombre: $abuela
 Conteo de leucocitos: Normal
-Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 
 &lt;div class=&quot;dialogue&quot;&gt;\
 &lt;img class=&quot;icon&quot; src=&quot;Images/abuelo-mini.png&quot; width=&quot;50px&quot; padding-right=&quot;3px&quot;&gt;&lt;p&gt;	$abuelo: &quot;Esooo, mi mujer poniendo ejemplo&quot;
@@ -3585,12 +3584,12 @@ Nombre: $jugador
 &lt;&lt;if $player.riesgo gte 2.5&gt;&gt; \
 &lt;&lt;set $player.covid = true&gt;&gt; \
 Conteo de leucocitos: Alto
-Presensia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;POSITIVO&lt;/b&gt;
 
 La familia se queda en silencio total...
 &lt;&lt;else&gt;&gt; \
 Conteo de leucocitos: Normal
-Presensia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
+Presencia de virus SARS-CoV-2: &lt;b&gt;NEGATIVO&lt;/b&gt;
 
 $madre, $padre, $abuelo y $abuela emiten un suspiro colectivo
 &lt;&lt;endif&gt;&gt; \
@@ -3756,7 +3755,7 @@ $jugador se conecta al grupo de sus amigos y les comenta los resultados
 &lt;/p&gt;&lt;/div&gt;
 &lt;&lt;endif&gt;&gt; \
 
-[[Fin de juego]]</tw-passagedata><tw-passagedata pid="111" name="Fin de juego" tags="" position="3875,450" size="100,100">&lt;&lt;audio &quot;success&quot; volume 0.5 play&gt;&gt;
+[[Fin de juego]]</tw-passagedata><tw-passagedata pid="111" name="Fin de juego" tags="" position="3875,450" size="100,100">&lt;&lt;audio &quot;success&quot; volume 0.3 play&gt;&gt;
 !Fin de Juego
 Y así termina la historia de $jugador, esperemos que estas experiencias le ayuden a cuidarse mejor en el futuro
 
